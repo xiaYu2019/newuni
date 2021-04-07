@@ -91,7 +91,9 @@
 				最新动态
 			</view>
 			<u-swiper :list="list" :effect3d="true"></u-swiper>
+			<button class="morebt" size="mini" type="primary" plain="true">更多动态</button>
 		</view>
+		<pageFooter></pageFooter>
 	</view>
 </template>
 
@@ -307,18 +309,11 @@
 		padding-bottom: 50rpx;
 	}
 
-	/* .advantage .list .kind>image {
-		padding-top: 60rpx;
-		padding-bottom: 20rpx;
-		width: 100rpx;
-		height: 100rpx;
-	} */
 	.tu{
 		padding-top: 60rpx;
 		padding-bottom: 20rpx;
 		width: 100rpx;
 		height: 100rpx;
-		/* position: static; */
 	}
 	.advantage .list .kind .subtitle {
 		margin-bottom: 10rpx;
@@ -329,6 +324,8 @@
 	.dynamic {
 		width: 100%;
 		padding-top: 40rpx;
+		padding-bottom: 80rpx;
+		text-align: center;
 	}
 
 	.dynamic .caption {
@@ -336,5 +333,8 @@
 		font-size: 40rpx;
 		font-weight: bold;
 		text-align: center;
+	}
+	.dynamic .morebt{
+		margin-top: 40rpx;
 	}
 </style>
