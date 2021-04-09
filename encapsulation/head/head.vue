@@ -13,26 +13,26 @@
 			<view class="box" @click="shut">
 			</view>
 			<view class="list">
-				<view class="link hover">
+				<navigator class="link hover" url="/pages/index/index" open-type="redirect">
 						<text>首页</text>
 						<image src="../../static/close.png" @click="shut"></image>
-				</view>
+				</navigator>
 				
 				<view class="link" @click="shut_tale('tale')">
 						<text>卓动故事</text>
 						<view :class="(twoNav.tale)?'picture_up':'picture_below'"></view>
 				</view>
 				<view class="hiddenbox" v-show="twoNav.tale">
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/story/story" open-type="redirect">
 						公司简介
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/story/story?anchor=intro" open-type="redirect" >
 						卓动团队
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/story/story?anchor=honor" open-type="redirect" >
 						卓动荣誉
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/story/story?anchor=course" open-type="redirect" >
 						发展历程
 					</navigator>
 				</view>	
@@ -41,13 +41,13 @@
 						<view :class="(twoNav.business)?'picture_up':'picture_below'"></view>
 				</view>
 				<view class="hiddenbox" v-show="twoNav.business">
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/business/bigdata/bigdata" open-type="redirect" >
 						大数据业务
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/business/software/software" open-type="redirect" >
 						软件服务
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/business/game/game" open-type="redirect" >
 						游戏业务
 					</navigator>
 					<navigator class="link_s">

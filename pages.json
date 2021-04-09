@@ -3,6 +3,35 @@
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [
+		// {
+		// 	"path": "pages/get/get",
+		// 	"style": {
+		// 		"navigationStyle": "custom",
+		// 		"navigationBarTitleText": "uni-app"
+		// 	}
+		// },
+		{
+			"path": "pages/business/game/game",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/business/software/software",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		
+		{
+			"path": "pages/business/bigdata/bigdata",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
 		{
 			"path": "pages/story/story",
 			"style": {
