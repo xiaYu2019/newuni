@@ -10,7 +10,8 @@
 		data() {
 			return {
 				// 非真实地址
-				action: 'http://192.168.1.8:8080/pic/upload',
+				action: 'http://192.168.1.13:8080/api/pri/file/upload',
+				// action: 'http://192.168.1.8:8080/upload',
 			}
 		},
 		methods: {

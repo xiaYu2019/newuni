@@ -50,10 +50,10 @@
 					<navigator class="link_s" url="/pages/business/game/game" open-type="redirect" >
 						游戏业务
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/business/company/company" open-type="redirect" >
 						企业服务
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/business/dirSir/dirSir" open-type="redirect" >
 						电商应用
 					</navigator>
 				</view>	
@@ -62,13 +62,13 @@
 						<view :class="(twoNav.message)?'picture_up':'picture_below'"></view>
 				</view>
 				<view class="hiddenbox" v-show="twoNav.message">
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/journalism/journalism?tab=activity" open-type="redirect" >
 						活动资讯
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/journalism/journalism?tab=company" open-type="redirect" >
 						公司资讯
 					</navigator>
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/journalism/journalism?tab=train" open-type="redirect" >
 						培训资讯
 					</navigator>
 				</view>	
@@ -77,7 +77,7 @@
 						<view :class="(twoNav.join)?'picture_up':'picture_below'"></view>
 				</view>
 				<view class="hiddenbox" v-show="twoNav.join">
-					<navigator class="link_s">
+					<navigator class="link_s" url="/pages/campus/campus" open-type="redirect" >
 						社会招聘
 					</navigator>
 					<navigator class="link_s">
@@ -90,9 +90,9 @@
 						培训发展
 					</navigator>
 				</view>	
-				<view class="link" >
+				<navigator class="link" url="/pages/relation/relation" open-type="redirect" >
 						<text>联系我们</text>
-				</view>
+				</navigator>
 				
 			</view>
 		</cover-view>

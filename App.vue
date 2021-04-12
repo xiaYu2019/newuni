@@ -16,4 +16,7 @@
 <style lang="scss">
 	@import "uview-ui/index.scss";
 	/*每个页面公共css */
+	*{
+		letter-spacing:2rpx
+	}
 </style>

@@ -11,6 +11,46 @@
 		// 	}
 		// },
 		{
+		    "path" : "pages/relation/relation",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom",
+		        "navigationBarTitleText": ""
+		    }
+		    
+		},
+		{
+		    "path" : "pages/campus/campus",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom",
+		        "navigationBarTitleText": ""
+		    }
+		    
+		},
+		{
+			"path": "pages/journalism/journalism",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": ""
+			}
+		
+		},
+		{
+			"path": "pages/business/dirSir/dirSir",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/business/company/company",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
 			"path": "pages/business/game/game",
 			"style": {
 				"navigationStyle": "custom",
@@ -24,7 +64,7 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		},
-		
+
 		{
 			"path": "pages/business/bigdata/bigdata",
 			"style": {
@@ -46,7 +86,9 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+		
+	    
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
