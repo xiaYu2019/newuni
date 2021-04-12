@@ -18,15 +18,18 @@
 						<image src="../../static/close.png" @click="shut"></image>
 				</navigator>
 				
-				<view class="link" @click="shut_tale('tale')">
+				<navigator class="link" url="/pages/story/story"  open-type="redirect" >
+						<text>卓动故事</text>
+				</navigator>
+				<!-- <view class="link" @click="shut_tale('tale')">
 						<text>卓动故事</text>
 						<view :class="(twoNav.tale)?'picture_up':'picture_below'"></view>
 				</view>
 				<view class="hiddenbox" v-show="twoNav.tale">
-					<navigator class="link_s" url="/pages/story/story" open-type="redirect">
+					<navigator class="link_s" url="/pages/story/story?anchor=box" open-type="redirect">
 						公司简介
 					</navigator>
-					<navigator class="link_s" url="/pages/story/story?anchor=intro" open-type="redirect" >
+					<navigator class="link_s" url="/pages/story/story?anchor=team" open-type="redirect" >
 						卓动团队
 					</navigator>
 					<navigator class="link_s" url="/pages/story/story?anchor=honor" open-type="redirect" >
@@ -35,7 +38,7 @@
 					<navigator class="link_s" url="/pages/story/story?anchor=course" open-type="redirect" >
 						发展历程
 					</navigator>
-				</view>	
+				</view>	 -->
 				<view class="link" @click="shut_tale('business')">
 						<text>卓动业务</text>
 						<view :class="(twoNav.business)?'picture_up':'picture_below'"></view>
@@ -72,11 +75,16 @@
 						培训资讯
 					</navigator>
 				</view>	
-				<view class="link" @click="shut_tale('join')">
+				
+				<navigator class="link" url="/pages/campus/campus"  open-type="redirect" >
+						<text>加入我们</text>
+				</navigator>
+				
+				<!-- <view class="link" @click="shut_tale('join')">
 						<text>加入我们</text>
 						<view :class="(twoNav.join)?'picture_up':'picture_below'"></view>
-				</view>
-				<view class="hiddenbox" v-show="twoNav.join">
+				</view> -->
+				<!-- <view class="hiddenbox" v-show="twoNav.join">
 					<navigator class="link_s" url="/pages/campus/campus" open-type="redirect" >
 						社会招聘
 					</navigator>
@@ -89,7 +97,7 @@
 					<navigator class="link_s">
 						培训发展
 					</navigator>
-				</view>	
+				</view>	 -->
 				<navigator class="link" url="/pages/relation/relation" open-type="redirect" >
 						<text>联系我们</text>
 				</navigator>
@@ -220,7 +228,7 @@
 		border-bottom: 10rpx solid transparent;
 		border-left: 10rpx solid transparent;
 		position: absolute;
-		left: 46%;
+		left: 80%;
 		top: 30%;
 	}
 	.listlink .list .link .picture_up{
@@ -231,7 +239,7 @@
 		border-bottom: 10rpx solid #606060;
 		border-left: 10rpx solid transparent;
 		position: absolute;
-		left: 46%;
+		left: 80%;
 		top: 20%;
 	}
 	.listlink .list .link>text{

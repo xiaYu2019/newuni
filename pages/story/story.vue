@@ -54,7 +54,7 @@
 			<view class="explain_b">卓动的每一次成长和蜕变，都离不开每一位风雨兼程使命必达的卓动人</view>
 			<u-swiper :list="list" :effect3d="true"></u-swiper>
 		</view>
-		<view class="course" id="course">
+		<view class="course">
 			<view class="caption_c">卓动历程与革新</view>
 			<view class="process">
 				<view class="imgbox">
@@ -124,39 +124,43 @@
 		},
 		onLoad(options) {
 			if (options) {
-				this.anchor = options.anchor;
+				// this.anchor = options.anchor;
 			}
 
 		},
-		// onReady(options) {
-		// 	if (this.anchor) {
-		// 		uni.createSelectorQuery().select("." + this.anchor).boundingClientRect(data => {
-		// 			console.log(data.top)
-		// 			let tu = data.top-165
-		// 			console.log(tu);
-		// 			uni.pageScrollTo({
-		// 			    scrollTop: tu,
-		// 			    duration: 1
-		// 			});
-		// 		}).exec();
-		// 	}
-
-		// },
 		onReady() {
-			if (this.anchor) {
-				let view = uni.createSelectorQuery().in(this).select("."+this.anchor);
-				view.boundingClientRect(data => {
-					console.log(data.top,data.top-50)
-					uni.pageScrollTo({
-						scrollTop: data.top,
-						duration: 1
-					});
-				}).exec();
-			}
-		},
 
+
+		},
 		methods: {
 
+		},
+		onShow() {
+
+		},
+		mounted() {
+			// let query = uni.createSelectorQuery();
+			// // query.select(`.${this.anchor}`).boundingClientRect( (res) => {
+			// // 	console.log(res)
+			// // 	uni.pageScrollTo({
+			// // 	    scrollTop: res.top,
+			// // 	    duration: 300
+			// // 	});
+			// // }).exec()
+			// // query.select(`.${this.anchor}`).boundingClientRect((res) => {
+			// // 	console.log(res)
+			// // 	uni.pageScrollTo({
+			// // 		scrollTop: res.top,
+			// // 		duration: 300
+			// // 	});
+			// // }).exec(),
+			// query.select(`.${this.anchor}`).fields({dataset:true,rect:true,size:true},(res) => {
+			// 	console.log(res)
+			// 	uni.pageScrollTo({
+			// 		scrollTop: res.top,
+			// 		duration: 300
+			// 	});
+			// }).exec()
 		}
 	}
 </script>
