@@ -195,6 +195,7 @@
 				</view>
 			</view>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -203,6 +204,7 @@
 	export default {
 		data() {
 			return {
+				scrollTop: 0,
 				pitch: "全部",
 				show: false,
 				tab: {
@@ -215,6 +217,9 @@
 					"运营类": ["运营类"]
 				}
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		methods: {
 			pitchs(e) {

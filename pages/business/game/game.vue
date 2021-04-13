@@ -50,6 +50,7 @@
 				<image class="picture" src="/static/business/iconyx1.png"></image>
 			</view>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -58,8 +59,11 @@
 	export default {
 		data() {
 			return {
-
+				scrollTop: 0,
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 

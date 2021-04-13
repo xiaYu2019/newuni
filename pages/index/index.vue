@@ -93,6 +93,7 @@
 			<u-swiper :list="list" :effect3d="true"></u-swiper>
 			<button class="morebt" size="mini" type="primary" plain="true">更多动态</button>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -101,6 +102,7 @@
 	export default {
 		data() {
 			return {
+				scrollTop: 0,
 				// checked: false,
 				list: [{
 						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
@@ -116,6 +118,9 @@
 					}
 				],
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 
@@ -337,4 +342,8 @@
 	.dynamic .morebt{
 		margin-top: 40rpx;
 	}
+	/* .rocket{
+		width: 100rpx;
+		height: 100rpx;
+	} */
 </style>

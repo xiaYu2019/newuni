@@ -13,6 +13,7 @@
 			<image class="drawing" mode="widthFix" src="../../../static/business/picy1.png"></image>
 			<button class="consultbt" size="mini" type="primary" >咨询合作</button>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -21,8 +22,11 @@
 	export default {
 		data() {
 			return {
-
+				scrollTop: 0,
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 

@@ -25,6 +25,7 @@
 			<view class="way">游戏:oversea@jodoinc.com</view>
 			<view class="way">商务:bd@jodoinc.com</view>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -33,8 +34,11 @@
 	export default {
 		data() {
 			return {
-
+				scrollTop: 0,
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 

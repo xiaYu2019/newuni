@@ -14,6 +14,7 @@
 			<view class="title">我们的平台能做到</view>
 			<image class="dilemma_i" mode="widthFix" src="../../../static/business/ability.png"></image>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -22,8 +23,12 @@
 	export default {
 		data() {
 			return {
+				scrollTop: 0,
 
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 

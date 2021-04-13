@@ -98,6 +98,7 @@
 			</view>
 		</view>
 		<view class="future">2020年，探索多元化企业业务....</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -106,7 +107,7 @@
 	export default {
 		data() {
 			return {
-				anchor: null,
+				scrollTop: 0,
 				list: [{
 						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
 						title: '昨夜星辰昨夜风，画楼西畔桂堂东'
@@ -123,10 +124,11 @@
 			}
 		},
 		onLoad(options) {
-			if (options) {
-				// this.anchor = options.anchor;
-			}
+			
 
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onReady() {
 
@@ -139,28 +141,6 @@
 
 		},
 		mounted() {
-			// let query = uni.createSelectorQuery();
-			// // query.select(`.${this.anchor}`).boundingClientRect( (res) => {
-			// // 	console.log(res)
-			// // 	uni.pageScrollTo({
-			// // 	    scrollTop: res.top,
-			// // 	    duration: 300
-			// // 	});
-			// // }).exec()
-			// // query.select(`.${this.anchor}`).boundingClientRect((res) => {
-			// // 	console.log(res)
-			// // 	uni.pageScrollTo({
-			// // 		scrollTop: res.top,
-			// // 		duration: 300
-			// // 	});
-			// // }).exec(),
-			// query.select(`.${this.anchor}`).fields({dataset:true,rect:true,size:true},(res) => {
-			// 	console.log(res)
-			// 	uni.pageScrollTo({
-			// 		scrollTop: res.top,
-			// 		duration: 300
-			// 	});
-			// }).exec()
 		}
 	}
 </script>

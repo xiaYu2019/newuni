@@ -55,6 +55,7 @@
 		</view>
 		<view class="bt">咨询合作</view>
 		<pageFooter class="so"></pageFooter>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 	</view>
 </template>
 
@@ -62,8 +63,11 @@
 	export default {
 		data() {
 			return {
-
+				scrollTop: 0,
 			}
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		onLoad() {
 

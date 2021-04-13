@@ -136,6 +136,7 @@
 			</view>
 			<view class="bt">加载更多>></view>
 		</view>
+		<u-back-top :scroll-top="scrollTop"></u-back-top>
 		<pageFooter></pageFooter>
 	</view>
 </template>
@@ -144,12 +145,16 @@
 	export default {
 		data() {
 			return {
+				scrollTop: 0,
 				pitch:null,
 			}
 		},
 		onLoad(options) {
 				this.pitch = options.tab;
 		
+		},
+		onPageScroll(e) {
+			this.scrollTop = e.scrollTop;
 		},
 		methods: {
 			
